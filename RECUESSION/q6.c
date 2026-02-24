@@ -14,3 +14,6 @@ int main() {
     printf("The GCD of %d and %d is: %d\n", num1, num2, result);
     return 0;
 }
+//output
+//Enter two numbers: 48 18
+//The GCD of 48 and 18 is: 6

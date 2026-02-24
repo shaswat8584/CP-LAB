@@ -14,3 +14,6 @@ int main() {
     printf("The sum of numbers from 1 to %d is: %d\n", n, result);
     return 0;
 }
+//output
+//Enter a number: 5
+//The sum of numbers from 1 to 5 is: 15

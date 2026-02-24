@@ -15,3 +15,7 @@ int main() {
     printf("\n");
     return 0;
 }
+
+//output
+//Enter a decimal number: 10
+//The binary representation of 10 is: 1010

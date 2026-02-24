@@ -14,3 +14,6 @@ int main() {
     printf("The number of digits in %d is: %d\n", n, result);
     return 0;
 }
+//output
+//Enter a number: 12345
+//The number of digits in 12345 is: 5

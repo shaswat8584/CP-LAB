@@ -11,3 +11,5 @@ int main() {
     Pnn(50); // Print first 50 natural numbers
     return 0;
 }
+//output
+//1 2 3 4 5 .... 49 50

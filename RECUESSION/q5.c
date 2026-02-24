@@ -14,3 +14,6 @@ int main() {
     printf("The sum of digits in %d is: %d\n", n, result);
     return 0;
 }
+//output
+//Enter a number: 1234
+//The sum of digits in 1234 is: 10
