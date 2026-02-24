@@ -3,5 +3,4 @@
 // wap to find the sum of n number using malloc
 // wap to find min number using malloc array
 // wap to find max number using calloc array
-k
 

@@ -1,0 +1,26 @@
+//Wap to print fibonacci series up to n terms using recursion.
+#include <stdio.h>
+void fibonacci(int n) {
+    if (n == 1) {
+        printf("0 ");
+    } else if (n == 2) {
+        printf("0 1 ");
+    } else {
+        int a = 0, b = 1, c;
+        printf("0 1 ");
+        for (int i = 3; i <= n; i++) {
+            c = a + b; // Calculate the next term in the series
+            printf("%d ", c); // Print the current term
+            a = b; // Update a to the previous term
+            b = c; // Update b to the current term
+        }
+    }
+}
+int main() {
+    int n;
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+    printf("Fibonacci series up to %d terms: ", n);
+    fibonacci(n); // Print Fibonacci series up to n terms
+    return 0;
+}
