@@ -21,3 +21,6 @@ int main()
         printf("%d is not a prime number.\n", n);
     return 0;
 }
+//output
+//Enter a number: 17
+//17 is a prime number.

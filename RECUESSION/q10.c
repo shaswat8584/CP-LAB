@@ -19,3 +19,8 @@ int main()
     printEvenOdd(n);
     return 0;
 }
+//output
+//Enter a number: 3
+//1 is odd
+//2 is even
+//3 is odd

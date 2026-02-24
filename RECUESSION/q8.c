@@ -22,3 +22,7 @@ int main()
     printf("The largest element in the array is: %d\n", max);
     return 0;
 }
+//output
+//Enter the number of elements in the array: 5
+//Enter the elements of the array: 3 7 2 9 5
+//The largest element in the array is: 9

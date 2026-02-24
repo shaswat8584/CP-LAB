@@ -21,3 +21,7 @@ int main()
     printf("%.2lf raised to the power of %d is %.2lf\n", base, exp, result);
     return 0;
 }
+//output
+//Enter the base: 2
+//Enter the exponent: 3
+//2.00 raised to the power of 3 is 8.00
