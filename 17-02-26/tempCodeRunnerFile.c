@@ -1,0 +1,1 @@
+  rev[j] = '\0'; // Null-terminate the reversed string

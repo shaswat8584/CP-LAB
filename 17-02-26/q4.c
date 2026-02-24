@@ -1,10 +1,20 @@
-//wap to declare the 2 string variable , 2nd string accepts the name and asign to the first string and the first string is displayed
+//wap to input 1st name middlename and last name and print as A.K.Das using pointer
 #include<stdio.h>
-#include<string.h>
-void main(){
-    char str1[20], str2[20];
-    printf("Enter a name: ");
-    scanf("%s",str2);
-    strcpy(str1,str2);
-    printf("The name is: %s",str1);
+void main()
+{
+    char firstName[50], middleName[50], lastName[50];
+    char *ptr1, *ptr2, *ptr3;
+    
+    printf("Enter first name: ");
+    gets(firstName);
+    printf("Enter middle name: ");
+    gets(middleName);
+    printf("Enter last name: ");
+    gets(lastName);
+    
+    ptr1 = firstName;
+    ptr2 = middleName;
+    ptr3 = lastName;
+    
+    printf("%c.%c.%s\n", *ptr1, *ptr2, ptr3);
 }
