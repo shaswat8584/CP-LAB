@@ -1,32 +1,41 @@
-// wap to input a mxn matrix. find the adressess of the (i,j)th index in row major ordering.
+// wap to input a mxn matrix. find the adressess of the all (i,j)th index in row major ordering.
 #include <stdio.h>
-void main()
+int main()
 {
-    int m, n, i, j;
-    printf("Enter number of rows (m): ");
-    scanf("%d", &m);
-    printf("Enter number of columns (n): ");
-    scanf("%d", &n);
+    int m, n;
+    printf("Enter the number of rows (m) and columns (n): ");
+    scanf("%d%d", &m, &n);
 
-    int matrix[m][n];
+    int matrix[m][n]; // Declare a 2D array (matrix)
 
+    // Input the elements of the matrix
     printf("Enter the elements of the matrix:\n");
-    for (i = 0; i < m; i++)
+    for (int i = 0; i < m; i++)
     {
-        for (j = 0; j < n; j++)
+        for (int j = 0; j < n; j++)
         {
             scanf("%d", &matrix[i][j]);
         }
     }
 
-    int row_index, col_index;
-    printf("Enter the indices (i j) to find the address: ");
-    scanf("%d %d", &row_index, &col_index);
-
-    if (row_index >= 0 && row_index < m && col_index >= 0 && col_index < n)
+    // Print the addresses of each element in row-major order
+    printf("Addresses of the elements in row-major order:\n");
+    for (int i = 0; i < m; i++)
     {
-        int address = 1050 + (row_index * n + col_index) * sizeof(int);
-        printf("The address of element [%d][%d] is: %p\n", row_index, col_index, (void *)address);
+        for (int j = 0; j < n; j++)
+        {
+            printf("Address of element at (%d, %d): %p\n", i, j, (void *)&matrix[i][j]);
+        }
     }
-    else
+
+    return 0;
 }
+
+// Enter the number of rows (m) and columns (n): 2 2
+// Enter the elements of the matrix:
+// 1 2 3 4
+// Addresses of the elements in row-major order:
+// Address of element at (0, 0): 0061FEA0
+// Address of element at (0, 1): 0061FEA4
+// Address of element at (1, 0): 0061FEA8
+// Address of element at (1, 1): 0061FEAC
